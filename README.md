@@ -5,4 +5,4 @@ jednotlivých umělců postupem kolaborativního filtrování vybere aplikace po
 
 Aplikace je implementována jako RESTové API v PHP, které vrací množinu výsledků ve formátu JSON.
 
-K vyhodnocení byla využita databáze "R1 - Yahoo! Music User Ratings of Musical Artists, version 1.0" poskytovaná firmou Yahoo!
+K vyhodnocení byla využita databáze "R1 - Yahoo! Music User Ratings of Musical Artists, version 1.0" poskytovaná firmou Yahoo! Tato databáze ze bohužel nemůže být ze smluvních podmínek zveřejněna.
