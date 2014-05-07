@@ -18,10 +18,12 @@ Tento soubor je automaticky generován aplikací pokud neexistuje a slouží k z
 
 <b>ratings\_blocks\_bytes.txt</b><br />
 Tento soubor je automaticky generován aplikací pokud neexistuje a slouží k zvýšení efektivity. Je vygenerován na základě výše zmíněného souboru <i>ratings\_blocks.txt</i>. Obsahuje stejné informace, ne však v jednotkách řádek ale v jednotkách bytů. Čili ve stejném formátu <i>byte</i> | <i>number\_of\_bytes</i> je <i>byte</i> konkrétní byte, na kterém uživatel začíná a <i>number\_of\_bytes</i> počet bytů, které v hlavním souboru uživatel zabírá. Toto umožňuje podstatně rychlejší přístup k hlavním datům za pomoci funkce fseek.
+
 <b>ratings\_numOfUsers.txt</b><br />
+Tento soubor obsahuje pouze celkový počet uživatelů, kteří hodnotili v databázi - neboli souboru <i>ratings.txt</i>.
 
 <b>user-lines.sh</b><br />
 Toto je jeden z podpůrných bash skriptů sloužících k předzpracování dat v databázi. Za pomoci tohoto skriptu je vytvořen výše uvedený soubor <i>ratings\_blocks.txt</i>.
 
-<b>user-lines.sh</b><br />
-
+<b>average-lines.sh</b><br />
+Toto je jeden z podpůrných bash skriptů sloužících k předzpracování dat v databázi. Za pomoci tohoto skriptu je vytvořen výše uvedený soubor <i>ratings\_average.txt</i>.
