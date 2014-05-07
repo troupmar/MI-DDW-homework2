@@ -5,7 +5,7 @@ V této složce jsou zveřejněny všechny potřebné soubory pro správnou funk
 
 <b>ratings.txt</b><br />
 Toto je testovací podmnožina databáze s hodnocením od uživatelů. Data jsou uložena ve formátu <i>user\_id</i> | <i>artist\_id</i> | <i>rank</i>. <i>user\_id</i> reprezentuje 
-identifikátor uživatele, který hodnotí, <i>artist\_id</i> reprezentuje identifikátor umělce, kterého daný uživatel hodnotí a <i>rank</i> pak reprezentuje konkrétní ohodnocení daného umělce uživatelem.
+identifikátor uživatele který hodnotí, <i>artist\_id</i> reprezentuje identifikátor umělce, kterého daný uživatel hodnotí a <i>rank</i> pak reprezentuje konkrétní ohodnocení daného umělce uživatelem.
 
 <b>artists.txt</b><br />
 Toto je databáze, která obsahuje konkrétní názvy umělců. Data jsou uložena ve formátu <i>artist\_id</i> | <i>artist\_name</i>. <i>artist\_id</i> je identifikátor daného umělce a <i>artist\_name</i> je pak jeho konkrétní jméno.
