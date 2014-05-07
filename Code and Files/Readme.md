@@ -11,7 +11,7 @@ identifikátor uživatele který hodnotí, <i>artist\_id</i> reprezentuje identi
 Toto je databáze, která obsahuje konkrétní názvy umělců. Data jsou uložena ve formátu <i>artist\_id</i> | <i>artist\_name</i>. <i>artist\_id</i> je identifikátor daného umělce a <i>artist\_name</i> je pak jeho konkrétní jméno.
 
 <b>ratings\_average.txt</b><br />
-Tento soubor je automaticky generován aplikací pokud neexistuje a slouží k zvýšení efektivity. Obsahuje předpočítané průměrné hodnocení pro každého uživatele přes všechny jeho hodnocení. Konkrétní řádek reprezentuje konkrétního uživatele s tím, že se indexuje od 0, čili 0-tý řádek reprezentuje 0-tého uživatele.
+Tento soubor je automaticky generován aplikací pokud neexistuje a slouží k zvýšení efektivity. Obsahuje předpočítané průměrné hodnocení pro každého uživatele přes všechny jeho hodnocení. Konkrétní řádek reprezentuje uživatele s tím, že se indexuje od 0, čili 0-tý řádek reprezentuje 0-tého uživatele.
 
 <b>ratings\_blocks.txt</b><br />
 Tento soubor je automaticky generován aplikací pokud neexistuje a slouží k zvýšení efektivity. Obsahuje předpočítané pozice jednotlivých uživatelů v hlavním souboru s hodnocením - <i>ratings.txt</i>. Soubor je ve formátu <i>start\_line</i> | <i>number\_of\_lines</i>. Na x-tém řádku je x-tý uživatel s tím, že se indexuje od 0. <i>start\_line</i> je počáteční řádek, na kterém v hlavním souboru <i>ratings.txt</i> začíná hodnocení konkrétního uživatele. <i>number\_of\_lines</i> je pak počet hodnocení konkrétního uživatele, neboli počet řádků v hlavním souboru. Jeden řádek totiž odpovídá právě jednomu hodnocení.
