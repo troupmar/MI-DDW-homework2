@@ -3,20 +3,25 @@ Code and Files
 
 V této složce jsou zveřejněny všechny potřebné soubory pro správnou funkčnost celé aplikace.
 
-ratings.txt
-Toto je testovací podmnožina databáze s hodnocením od uživatelů. Data jsou uložena ve formátu user\_id | artist\_id | rank. user\_id reprezentuje 
-identifikátor uživatele, který hodnotí, artist\_id reprezentuje identifikátor umělce, kterého daný uživatel hodnotí a rank pak reprezentuje konkrétní ohodnocení daného umělce uživatelem.
+<b>ratings.txt</b><br />
+Toto je testovací podmnožina databáze s hodnocením od uživatelů. Data jsou uložena ve formátu <i>user\_id</i> | <i>artist\_id</i> | <i>rank</i>. <i>user\_id</i> reprezentuje 
+identifikátor uživatele, který hodnotí, <i>artist\_id</i> reprezentuje identifikátor umělce, kterého daný uživatel hodnotí a <i>rank</i> pak reprezentuje konkrétní ohodnocení daného umělce uživatelem.
 
-artists.txt
-Toto je databáze, která obsahuje konkrétní názvy umělců. Data jsou uložena ve formátu artist\_id | artist\_name. artist\_id je identifikátor daného umělce a artist\_name je pak jeho konkrétní jméno.
+<b>artists.txt</b><br />
+Toto je databáze, která obsahuje konkrétní názvy umělců. Data jsou uložena ve formátu <i>artist\_id</i> | <i>artist\_name</i>. <i>artist\_id</i> je identifikátor daného umělce a <i>artist\_name</i> je pak jeho konkrétní jméno.
 
-ratings\_average.txt
+<b>ratings\_average.txt</b><br />
+Tento soubor je automaticky generován aplikací pokud neexistuje a slouží k zvýšení efektivity. Obsahuje předpočítané průměrné hodnocení pro každého uživatele přes všechny jeho hodnocení. Konkrétní řádka reprezentuje konkrétního uživatele s tím, že se indexuje od 0, čili 0-tý řádek reprezentuje 0-tého uživatele.
 
-ratings\_blocks.txt
+<b>ratings\_blocks.txt</b><br />
+Tento soubor je automaticky generován aplikací pokud neexistuje a slouží k zvýšení efektivity. Obsahuje předpočítané pozice jednotlivých uživatelů v hlavním souboru s hodnocením - <i>ratings.txt</i>. Soubor je ve formátu <i>start\_line</i> | <i>number\_of\_lines</i>. Na x-tém řádku je x-tý uživatel s tím, že se indexuje od 0. <i>start\_line</i> je počáteční řádek, na kterém v hlavním souboru <i>ratings.txt</i> začíná hodnocení konkrétního uživatele. <i>number\_of\_lines</i> je pak počet hodnocení konkrétního uživatele, neboli počet řádků v hlavním souboru. Jeden řádek totiž odpovídá právě jednomu hodnocení.
 
-ratings\_blocks\_bytes.txt
+<b>ratings\_blocks\_bytes.txt</b><br />
+Tento soubor je automaticky generován aplikací pokud neexistuje a slouží k zvýšení efektivity. Je vygenerován na základě výše zmíněného souboru <i>ratings\_blocks.txt</i>. Obsahuje stejné informace, ne však v jednotkách řádek ale v jednotkách bytů. Čili ve stejném formátu <i>byte</i> | <i>number\_of\_bytes</i> je <i>byte</i> konkrétní byte, na kterém uživatel začíná a <i>number\_of\_bytes</i> počet bytů, které v hlavním souboru uživatel zabírá. Toto umožňuje podstatně rychlejší přístup k hlavním datům za pomoci funkce fseek.
+<b>ratings\_numOfUsers.txt</b><br />
 
-ratings\_numOfUsers.txt
+<b>user-lines.sh</b><br />
+Toto je jeden z podpůrných bash skriptů sloužících k předzpracování dat v databázi. Za pomoci tohoto skriptu je vytvořen výše uvedený soubor <i>ratings\_blocks.txt</i>.
 
-user-lines.sh
-Toto je jeden z podpůrných bash skriptů sloužících k předzpracování dat v databázi. Za pomoci tohoto 
+<b>user-lines.sh</b><br />
+
