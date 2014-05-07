@@ -30,6 +30,7 @@ Toto je jeden z podpůrných bash skriptů sloužících k předzpracování dat
 
 <b>Database.php</b><br />
 Tato třída slouží k  manipulaci s databází - neboli soubory, které obsahují všechna potřebná data pro výpočet. Pomocí této třídy jsou připravovány a generovány všechny podpůrné soubory obsahující předzpracovaná data, které umožňují zefektivnit běh aplikace. 
+
 <b>RecommendSystem.php</b><br />
 Tato třída provádí vlastní výpočet kolaborativního filtrování nad připravenými daty metodami třídy <i>Database.php</i>. Podobnost jednotlivých uživatelů probíhá na základě metriky "Pearson correlation similarity". Od nejpodobnějších uživatelů dotazovaného uživatele jsou vybrány doporučení umělců na základě jejich průměrných hodnocení a četnosti hodnocení od uživatelů. Umělec je tedy doporučen v případě, že je obsažen v množině hodnocení podobného uživatele a má vysoké průměrné hodnocení, které je ustanoveno na základě velkého počtu hodnocení. 
 
